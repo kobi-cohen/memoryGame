@@ -13,3 +13,9 @@ body{
     background-size: cover;
     background-image:url('../assets/background_back_card.jpg');
 }
+.counter{
+
+    font-size: 25px;
+    color: white;
+    
+}

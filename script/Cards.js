@@ -1,10 +1,10 @@
 class Cards {
-static cardsAmount=0
+static cardsAmount=0 // count the number of instances was created
 
     constructor(){
-        Cards.cardsAmount++
+        Cards.cardsAmount++ // add one to the counter 
     }
-    createDiv (){
+    createDiv (){ //method create a div with class name and return it
         
         const div = document.createElement('div')
         div.classList.add('card')
@@ -14,7 +14,7 @@ static cardsAmount=0
         
     }
 
-    addEvent(div){
+    addEvent(div){ // add event listener to div 
         div.addEventListener('click',()=>
         {
         console.log('Card was clicked')

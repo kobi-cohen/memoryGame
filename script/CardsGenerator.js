@@ -10,20 +10,18 @@ class CardsGenerator{
     }
 }
 
-createCard(){
+createCard(){ //create cards 
     
     const card = new Cards()
-    let a = card.createDiv()
-    // Cards.cardsList.push(a)
-    this.drawCards(a)
+    
+    this.drawCards(card.createDiv())
 }
  
-   drawCards(card){
+   drawCards(card){ 
         const wrapper = document.getElementById('wrapper')
-        // cardsList.map(card=>{
 
             wrapper.appendChild(card)
-        // })
+        
         }
 
 
