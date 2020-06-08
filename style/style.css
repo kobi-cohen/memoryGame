@@ -1,0 +1,15 @@
+body{
+    background-color: pink;
+}
+.card{
+    display:inline-block;
+    width: 100px;
+    height:150px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px;
+}
+.back{
+    background-size: cover;
+    background-image:url('../assets/background_back_card.jpg');
+}
