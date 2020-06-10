@@ -1,11 +1,15 @@
 import Cards from './Cards.js'
 
 class CardsGenerator{
+ 
     static cardsList=[]
     
     generate(cards){
         for (let i=0 ; i<cards ; i++){
-        this.createCard()
+        let card = this.createCard()
+        CardsGenerator.cardsList.push(card)
+        this.drawCards(card.createDiv())
+        console.log(CardsGenerator.cardsList)
         
     }
 }
@@ -13,8 +17,7 @@ class CardsGenerator{
 createCard(){ //create cards 
     
     const card = new Cards()
-    
-    this.drawCards(card.createDiv())
+    return card
 }
  
    drawCards(card){ 
